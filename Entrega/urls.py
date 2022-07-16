@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from App_mvt.views import mostrar_index
+from App_mvt.views import mostrar_index, mostrar_busqueda, mostrar_carga
 from App_mvt.views import cargar_cliente, buscar_cliente
 from App_mvt.views import cargar_coin, buscar_coin
 from App_mvt.views import cargar_operacion, buscar_operacion
@@ -23,6 +23,8 @@ from App_mvt.views import cargar_operacion, buscar_operacion
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', mostrar_index),
+    path('carga/', mostrar_carga),
+    path('busqueda/', mostrar_busqueda),
     path('cargar-cliente/', cargar_cliente),
     path('buscar-cliente/',buscar_cliente),
     path('cargar-coin/', cargar_coin),
