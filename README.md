@@ -12,11 +12,11 @@ A continuación se dejan algunas de las entradas almacenadas en la base de datos
 
 ### CLIENTES
 
-id	nombre	apellido	edad	email
-1	Juan	Perez	27	j.perez@gmail.com
-2	Julian	Alvarez	34	julian.a@gmail.com
-3	Franco	Tonelli	25	francoo@gmail.com
-5	Patricio	Setter	30	patoo@gmail.com
+|id |nombre   |apellido  |edad  |email
+|1  |Juan     |Perez     |27    |j.perez@gmail.com
+|2  |Julian   |Alvarez   |34    |julian.a@gmail.com
+|3  |Franco   |Tonelli   |25    |francoo@gmail.com
+|5  |Patricio |Setter    |30    |patoo@gmail.com
 
 
 ### COINS
