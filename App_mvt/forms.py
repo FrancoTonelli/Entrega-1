@@ -19,7 +19,7 @@ class OperacionFormulario(forms.Form):
     fecha = forms.DateField()
 
 class ClienteBusquedaFormulario(forms.Form):
-    nombre = forms.CharField()
+    email = forms.EmailField()
 
 class CoinBusquedaFormulario(forms.Form):
     ticker = forms.CharField()

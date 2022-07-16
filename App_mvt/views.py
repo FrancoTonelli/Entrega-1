@@ -12,6 +12,14 @@ def mostrar_index(request):
     context ={}
     return render(request, 'App_mvt/index.html',context)
 
+def mostrar_carga(request):
+    context ={}
+    return render(request, 'App_mvt/carga.html',context)
+
+def mostrar_busqueda(request):
+    context ={}
+    return render(request, 'App_mvt/busqueda.html',context)
+
 
 def cargar_cliente(request):
     if request.method == 'POST':
@@ -37,8 +45,8 @@ def buscar_cliente(request):
 
     if request.GET:
         criterio = request.GET
-        criterio=criterio['nombre']
-        clientes = Cliente.objects.filter(nombre__icontains=criterio)
+        criterio=criterio['email']
+        clientes = Cliente.objects.filter(email__icontains=criterio)
 
     return render(request, "App_mvt/cliente-search.html",{"formulario": formulario, "clientes":clientes})
  
